@@ -1,0 +1,12 @@
+{
+    "name": "Azure devops login helper",
+    "id": "azdevops-login-helper",
+    "version": "1.0.0",
+    "description": "This feature will help you login to Azure Devops",
+    "options": {
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/git"
+    ]
+}
