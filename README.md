@@ -16,7 +16,7 @@ Running `hello` inside the built container will print the greeting provided to i
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/feature-starter/hello:1": {
+        "ghcr.io/milunka/devcontainers-azure-devops/hello:latest": {
             "greeting": "Hello"
         }
     }
@@ -29,37 +29,29 @@ $ hello
 Hello, user.
 ```
 
-### `color`
+### `helper`
 
-Running `color` inside the built container will print your favorite color to standard out.
+Running `helper` inside the built container will print your favorite color to standard out.
 
 ```jsonc
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/feature-starter/color:1": {
-            "favorite": "green"
-        }
+        "ghcr.io/milunka/devcontainers-azure-devops/helper:latest": { }
     }
 }
 ```
 
-```bash
-$ color
-
-my favorite color is green
-```
-
 ## Repo and Feature Structure
 
-Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder.  Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`. 
+Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder.  Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`.
 
 ```
 ├── src
 │   ├── hello
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-│   ├── color
+│   ├── helper
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
 |   ├── ...

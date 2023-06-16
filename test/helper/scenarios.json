@@ -1,0 +1,9 @@
+{
+    "helper": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "helper": {
+            }
+        }
+    }
+}
